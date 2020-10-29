@@ -1,0 +1,305 @@
+/*        colors and fonts
+#Strong Cyan: hsl(171, 66%, 44%)
+#Light Blue: hsl(233, 100%, 69%)
+#Dark Grayish Blue: hsl(210, 10%, 33%)
+#Grayish Blue: hsl(201, 11%, 66%)
+
+
+Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+Weights: 400, 600
+Font size: 18px
+Mobile: 375px
+Desktop: 1440px
+*/
+
+
+/* ---------------- reset css ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* --------------------- global sttyles ------------------- */
+  body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: hsl(210, 10%, 33%);
+  }
+  button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 30px 0px 50px 0;
+    cursor: pointer;
+}
+    .mac-btn{
+    background-color: hsl(233, 100%, 69%);
+    }
+    .ios-btn{
+        background-color: hsl(171, 66%, 44%);
+    }
+  
+    h2 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 400;
+    
+    
+    }
+  /* --------------------   header                ---------------- */
+
+
+  .header{
+      background-image: url(images/bg-header-desktop.png);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  .header-text{
+      width: 60%;
+  }
+  .button{
+    flex-direction: row;
+       }
+
+  .logo {
+    margin: 50px;
+  }
+  .header h1  {
+    font-weight: 600;
+    text-align: center;
+  }
+  .header p{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 10px;}
+
+
+  /* --------------------            keep-track      ---------------- */
+
+.keep-track{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.keeptrack-text{
+width: 70%;
+margin-bottom: 50px;
+}
+
+
+
+/* ----------------------------     features               ---------------------- */
+.features-container {
+    display: flex;
+    }
+
+.features{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 10px 30px 0 50px ;
+
+}
+
+.features p{
+    text-align: unset;
+    margin-bottom: 25px;
+}
+.img-computer{
+    text-align: center;
+        display: block;
+}
+.img-computer img {
+max-width: 1440px;
+width: 90%;
+height: auto;
+margin-bottom: 50px;
+
+}
+
+/* -----------------------   access       -------------------- */
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+    width: 100%;
+}
+.access-text{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+
+/* ---------------------     supercharge          ----------------- */
+
+.devices-img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+
+ 
+}
+.supercharge p {
+    margin-bottom: 70px;
+}
+
+
+
+
+/* -----------------------           features        ------------ */
+
+.another-features{
+    display: flex;
+   
+}
+.another-features .feat{
+    margin:20px;
+    text-align: center;
+
+}
+
+.another-features img{
+    margin-bottom: 10px;
+}
+
+
+/* -----------------------        companies   and   clipboard      ----------------- */
+
+.companies{
+    display: flex;
+    justify-content:space-between;
+    margin: 70px 40px;
+}
+
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.clipboard-text{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+/* ----------------     footer             --------------- */
+
+footer{
+    background-color:#f5f6f8
+}
+
+.footer-flex{
+    display: flex;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+.logo-footer{
+    margin-right: 40px;
+    margin-top: 15px;
+
+}
+.logo-footer img {
+  width: 65%;
+  
+}
+
+
+.help{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-nav{
+    margin-right: 25px;
+
+}
+
+.social-icons{
+    display: flex;
+    justify-content: left;
+ }
+  
+.social-icons a {
+    margin: 10px;
+}
+a:hover{
+    cursor: pointer;
+}
+a:visited { color: unset;
+}
+/* ------------------------     responsive styles         ----------------------- */
+
+@media screen  and (max-width:733px) {
+    .features-container {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+}
+
+
+@media screen and (max-width:650px){
+    .another-features{
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+}
+  
+
+
+@media screen and (max-width:851px){
+    .companies{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+
+    .logo2{
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .footer-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;   
+    }
+
+   .logo-footer, .help, .social-icons{
+    margin-bottom: 30px;
+   }
+
+   .help a {
+   margin-bottom: 15px;
+}
+
+}
